@@ -1,0 +1,78 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+#flip {
+  padding: 20px;
+  text-align: center;
+  background-color: #54A7B6 ;
+  border: solid 1px #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+  padding: 20px;
+  text-align: center;
+  background-color: #dedede;
+  border: solid 1px #000000;
+  height: 700px;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Click Here</div>
+<div id="panel">
+		<img src="Weeken.jpg"
+            style="width:500px;
+                  height:500px;
+                  padding-top: 0px;
+                  padding-left: 0px;
+                  padding-bottom: 0px;">
+           <div class="kolom">
+            <p class="deskripsi">Selamat datang, perkenalkan saya</p>
+            <h2>Maulana Sjarwdadi</h2>
+            <p>Semoga halam ini dapat memberi gambaran tentang diri saya, selamat menjelajah</p>
+            <p><a href="https://www.instagram.com/mlnsjrwd/?hl=id" class="tbl-pink">My Instagram</a></p>
+</div>
+
+</body>
+</html>
+
+<style>
+  div p a{
+    position: relative;
+    top: 30px;
+  }
+  a.tbl-pink{
+    background: #54A7B6 ;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0,2s;
+    text-decoration: none;
+}
+
+a.tbl-pink:hover{
+    background: #000000ca ;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+</style>
